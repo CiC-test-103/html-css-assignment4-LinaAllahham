@@ -47,6 +47,347 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /** Your CSS Below **/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  min-height: 100vh;
+
+  margin: 0;
+  
+  font-family: var(--fs-base);
+  font-size: var(--font-paragraph);
+  
+  background-color: var(--clr-paleBlue);
+
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.25;
+  color: var(--clr-lightLavender);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: var(--clr-white);
+  max-width: 600px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border-radius: 1.5rem;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(
+    var(--gra-lightSlateBlue),
+    var(--gra-lightRoyalBlue));
+  padding: 2rem;
+  border-radius: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-white);
+  gap: 0.5rem;
+  padding-bottom: 2.5rem;
+  padding-top: 1.75rem;
+}  
+
+.left-section h1{
+  font-size: 3.5rem;
+  font-weight: var(--fw-black);
+}
+
+.left-section h5{
+  color: var(--clr-lightLavender);
+}
+
+.left-section h4{
+  color: var(--clr-lightLavender);
+}
+
+.left-section h3{
+  font-size: 1.5rem;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(
+    var(--gra-violetBlue),
+    var(--gra-persianBlue));
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.25;  
+}
+
+.right-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--clr-white);
+  padding-top: 1.75rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  row-gap: 1rem;
+  border-radius: 0 1.5rem 1.5rem 0;
+
+
+}
+
+.right-section h4 {
+  font-weight: var(--fw-bold);
+  color: var(--clr-darkGrayBlue);
+  
+  
+}
+
+.reaction {
+  display: grid;
+  grid-template-columns: 1fr 4fr 6fr;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  margin-right: 2rem;
+  
+  
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  background-color: hsl(0, 47%, 97%);
+ 
+}
+.reaction h4{
+  color: var(--clr-lightRed);
+}
+.reaction h5 {
+  font-weight: var(--fw-bold);
+  color: var(--clr-darkGrayBlue);
+  font-size: small;
+  text-align: right;
+  
+}
+.reaction span{
+  font-weight: var(--fw-bold);
+  color: var(--gra-lightSlateBlue);
+  font-size: small;
+  padding-left: 4px;
+}
+.memory {
+  display: grid;
+  grid-template-columns: 1fr 4fr 6fr;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  background-color: hsl(60, 100%, 96%);
+ 
+}
+.memory h4{
+  color: var(--clr-orangeYellow);
+}
+.memory h5 {
+  font-weight: var(--fw-bold);
+  color: var(--clr-darkGrayBlue);
+  font-size: small;
+  text-align: right;
+}
+.memory span{
+  font-weight: var(--fw-bold);
+  color: var(--gra-lightSlateBlue);
+  font-size: small;
+  padding-left: 4px;
+}
+
+.verbal {
+  display: grid;
+  grid-template-columns: 1fr 2.9fr 6fr;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  background-color: hsl(160, 60%, 98%);
+ 
+}
+.verbal h4{
+  color: hsl(160, 48%, 57%);
+}
+.verbal h5 {
+  font-weight: var(--fw-bold);
+  color: var(--clr-darkGrayBlue);
+  font-size: small;
+  text-align: right;
+}
+.verbal span{
+  font-weight: var(--fw-bold);
+  color: var(--gra-lightSlateBlue);
+  font-size: small;
+  padding-left: 4px;
+}
+
+.visual {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 6fr;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  background-color: hsl(220, 60%, 97%);
+  margin-bottom: 1rem;
+ 
+}
+.visual h4{
+  color: var(--gra-lightSlateBlue);
+}
+.visual h5 {
+  font-weight: var(--fw-bold);
+  color: var(--clr-darkGrayBlue);
+  font-size: small;
+  text-align: right;
+}
+.visual span{
+  font-weight: var(--fw-bold);
+  color: var(--gra-lightSlateBlue);
+  font-size: small;
+  padding-left: 4px;
+}
+ 
+
+button {
+  background-color: var(--clr-darkGrayBlue);
+  padding: 9px 20px;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 2rem;
+}
+
+button:hover {
+  background: linear-gradient(
+    var(--gra-lightSlateBlue),
+    var(--gra-lightRoyalBlue));
+}
+
+button a{
+  font-weight: var(--fw-bold);
+  color: var(--clr-paleBlue);
+  text-decoration: none;
+}
+
+@media (max-width: 435px){
+  body{
+    min-height: 0;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .left-section {
+    border-radius: 0 0 2rem 2rem;
+    padding: 1.5rem 3rem 2rem 3rem;
+  }
+
+  .circle {
+    width: 9rem;
+    height: 9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .right-section h4 {
+    font-size: 1.2rem;
+  }
+
+  .reaction{
+    padding: 1rem 1.25rem;
+    margin-top: 0.25rem;
+  }
+
+  .reaction h4{
+    font-size: 1.1rem;
+  }
+
+  .reaction h5 {
+    font-size: 1rem;
+  }
+
+  .reaction span {
+    font-size: 1rem;
+  }
+
+  .memory{
+    padding: 1rem 1.25rem;
+  }
+  .memory h4 {
+    font-size: 1.1rem;
+  }
+  .memory h5 {
+    font-size: 1rem;
+  }
+  .memory span {
+    font-size: 1rem;
+  }
+
+  .verbal{
+    padding: 1rem 1.25rem;
+  }
+  .verbal h4 {
+    font-size: 1.1rem;
+  }
+  .verbal h5 {
+    font-size: 1rem;
+  }
+  .verbal span {
+    font-size: 1rem;
+  }
+
+  .visual{
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .visual h4 {
+    font-size: 1.1rem;
+  }
+  .visual h5 {
+    font-size: 1rem;
+  }
+  .visual span {
+    font-size: 1rem;
+  }
+
+  button{
+    padding: 0.9rem 1.25rem;
+    font-size: 1.2rem;
+  }
+
+  button a{
+    font-size: 1.15rem;
+  }
+}
+
 
 /** Attribution CSS **/
 .attribution { font-size: 11px; text-align: center; }
